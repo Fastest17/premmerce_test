@@ -1,0 +1,126 @@
+@import "reset";
+@import "variables";
+
+.wrapper{
+  max-width: 841px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+/* header */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header__nav__item {
+  color: $navColor;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 31px;
+  font-family: 'Tahoma', sans-serif;
+}
+.header__mobile-menu {
+  display: none;
+}
+
+/* main*/
+.main {
+  margin-bottom: 100px;
+}
+
+/* post */
+.main__post{
+  background: $postBg;
+  padding: 20px 30px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.post__img {
+  width: 50%;
+}
+.post__img__item{
+  width: 380px;
+  height: 230px;
+}
+
+.post__data {
+  width: 50%;
+  margin-left: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.post__data__title {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: bold;
+  color: $titleColor;
+  font-family: 'Tahoma', sans-serif;
+}
+.post__data_description {
+  font-size: 14px;
+  line-height: 20px;
+  color: $textColor;
+  font-family: 'Times New Roman', Times, serif;
+}
+.post__data__btn {
+  font-family: 'Tahoma', sans-serif;
+  padding: 10px 25px;
+  background: $btnBg;
+  border: none;
+  color: #fefefe;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background: darken($btnBg, 15%);
+  }
+}
+
+/* article */
+.main__article {
+  margin-top: 25px;
+}
+.article__title {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: bold;
+  color: $titleColor;
+  margin-bottom: 13px;
+}
+.article__description {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $textColor;
+}
+
+/* advantages */
+.main__advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 32px 10px 25px 10px;
+}
+.advantages__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.advantages__item_description {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin-left: 16px;
+  color: $titleColor;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@import "media";
